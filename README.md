@@ -11,4 +11,5 @@ Currently I have only implemented 2 players
   Have names instead of user IDs<br>
   Implement 3-4 player mode<br>
   Integrate the rules<br>
+  Add further validations<br>
 </ul>
