@@ -1,0 +1,40 @@
+types:
+  Color:
+    - WHITE
+    - GREEN
+    - BLACK
+  NumberCard:
+    value: int
+    color: Color
+  QuestionCard:
+    id: int
+    text: string
+  Player:
+    id: UserId
+  Chat:
+    text: string
+    sentAt: int
+  PlayerState:
+    hand: NumberCard[]
+    players: Player[]
+    turn: UserId?
+    questionPile: QuestionCard[]?
+    winner: UserId?
+    log: Chat[]
+
+methods:
+  joinGame:
+  startGame:
+  pickQuestion:
+    card: QuestionCard
+  guess: 
+    user: Player
+    guess: NumberCard[]
+  answer: 
+    answer: string
+
+auth:
+  anonymous: {}
+
+userState: PlayerState
+error: string
