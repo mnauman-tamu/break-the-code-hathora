@@ -114,8 +114,9 @@ export class Impl implements Methods<InternalState> {
     if (hand.userId !== userId) {
       return Response.error("Not your turn");
     }
+    const extraInfo = request.card.text ? ' (' + request.card.text + ')' : '';
     // log the question
-    state.chats.unshift({ text: userId + " asked: " + questionCards[cardIdx].text, sentAt: ctx.time});
+    state.chats.unshift({ text: userId + " asked: " + questionCards[cardIdx].text + extraInfo, sentAt: ctx.time});
     // remove from hand
     state.currQuestions?.splice(cardIdx, 1);
     // update pile if applicable
