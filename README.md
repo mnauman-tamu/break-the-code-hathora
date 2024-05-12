@@ -6,6 +6,7 @@ Currently I have only implemented 2 players
 
 <strong>Future dev work:</strong> <br>
 <ul>
+  Learn how to deploy<br>
   Add custom UI<br>
   Improve UX/UI to improve user experience<br>
   Have names instead of user IDs<br>
